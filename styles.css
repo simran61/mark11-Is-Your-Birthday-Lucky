@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap');
+
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Satisfy', cursive; 
+*/
+
+
+:root{
+    --primary-color: #F87171;
+    --secondary-color: #FECACA;
+    --bg-color: #FEF2F2;
+    --dark: #991B1B;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    background-color: var(--primary-color);
+}
+
+.heading{
+    color: var(--dark);
+    font-family: 'Satisfy', cursive; 
+    /* font-family: 'Dancing Script', cursive; */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.intro{
+    padding: 0 1rem;
+}
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    /* background-color: var(--secondary-color); */
+    text-align: center;
+    padding: 1rem;
+}
+
+.note{
+    background-color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: 1.5px solid var(--dark);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.privacy{
+    font-weight: bold;
+}
+
+input{
+    margin-top: 1rem;
+    width: 60%;
+    height: 1.5rem;
+    border: 1.5px solid var(--dark);
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+button{
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 100px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+footer{
+    background-color: var(--primary-color);
+}
+
+li{
+    display: inline;
+}
+
+.tag{
+    margin-bottom: 0rem;
+}
+
+.result{
+    display: none;
+}
+
+.footpara{
+    margin-top: 0;
+}
