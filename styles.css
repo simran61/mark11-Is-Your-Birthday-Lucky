@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap');
 
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;600&family=Satisfy&display=swap'); */
+
 /* 
 font-family: 'Dancing Script', cursive;
 font-family: 'Open Sans', sans-serif;
@@ -21,6 +23,16 @@ body{
 
 nav{
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: var(--dark);
+}
+
+.brand{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
 }
 
 .heading{
@@ -45,13 +57,15 @@ nav{
 
 .note{
     background-color: var(--primary-color);
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0 0.3rem;
     color: white;
     border: 1.5px solid var(--dark);
     border-radius: 0.5rem;
     display: flex;
     justify-content: space-evenly;
+    max-width: 270px;
+    font-size: 0.7rem;
+    margin: 0 auto 1rem auto;
 }
 
 .privacy{
@@ -59,7 +73,7 @@ nav{
 }
 
 input{
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 60%;
     height: 1.5rem;
     border: 1.5px solid var(--dark);
@@ -68,7 +82,7 @@ input{
 }
 
 button{
-    margin: 1rem;
+    /* margin: 1rem; */
     padding: 0.5rem;
     width: 100px;
     background-color: var(--primary-color);
@@ -81,20 +95,45 @@ button{
 
 footer{
     background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+ul{
+    padding-inline-start: 0px;
+    margin: 0.5rem auto 0 auto;
 }
 
 li{
     display: inline;
+    font-size: 1.2rem;
+    /* color: var(--dark); */
+    margin: 0 0.5rem;
+}
+
+a:hover{
+    color: var(--dark);
+}
+
+a{
+    color: white;
 }
 
 .tag{
     margin-bottom: 0rem;
 }
 
-.result{
+.lucky{
     display: none;
 }
 
-.footpara{
-    margin-top: 0;
+.unlucky{
+    display: none;
+}
+
+.footHeading{
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: 'Satisfy', cursive;
+    color: var(--dark);
 }
