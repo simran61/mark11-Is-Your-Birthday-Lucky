@@ -66,6 +66,7 @@ nav{
     max-width: 270px;
     font-size: 0.7rem;
     margin: 0 auto 1rem auto;
+    cursor: pointer;
 }
 
 .privacy{
