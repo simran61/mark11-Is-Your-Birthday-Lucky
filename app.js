@@ -26,10 +26,12 @@ function check(date, num) {
     if(sum%num ===0){
         console.log("lucky");
         luckyDiv.style.display="block"
+        unluckyDiv.style.display="none";
     }
     else{
         console.log("unlucky");
         unluckyDiv.style.display="block";
+        luckyDiv.style.display="none";
     }
 }
 
