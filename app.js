@@ -4,12 +4,22 @@ var checkBtn = document.querySelector("#btn")
 
 var luckyDiv= document.querySelector(".lucky");
 var unluckyDiv= document.querySelector(".unlucky");
+var msg= document.querySelector(".msg")
 
 var crossIcon= document.querySelector(".cross");
 var noteDiv= document.querySelector(".note");
 
 checkBtn.addEventListener("click", function(){
-    check(birthDate.value, Number(luckyNum.value));
+    if(luckyNum.value === ""){
+        msg.innerText = "Please enter your lucky number"
+    } else if(luckyNum.value < 0){
+        msg.innerText = "Negative values are not allowed"
+    } else if(birthDate.value === ""){
+        msg.innerText = "Please enter yur birth date"
+    } 
+    else{
+        check(birthDate.value, Number(luckyNum.value));
+    }
  });
 
 function check(date, num) {
@@ -25,11 +35,13 @@ function check(date, num) {
 
     if(sum%num ===0){
         console.log("lucky");
+        msg.innerText = "Yayy !! Your birthday is lucky for you."
         luckyDiv.style.display="block"
         unluckyDiv.style.display="none";
     }
     else{
         console.log("unlucky");
+        msg.innerText = "Opps !! Your birthday is not lucky for you."
         unluckyDiv.style.display="block";
         luckyDiv.style.display="none";
     }
